@@ -1,0 +1,907 @@
+:root {
+  --primary-blue: rgb(0, 51, 102);
+  --primary-gold: rgb(255, 215, 0);
+  --primary-white: rgb(255, 255, 255);
+
+  --secondary-green: rgb(50, 205, 50);
+  --secondary-beige: rgb(245, 245, 220);
+  --secondary-skyblue: rgb(135, 206, 235);
+
+  --accent-red: rgb(220, 20, 60);
+  --accent-purple: rgb(128, 0, 128);
+  --accent-goldenrod: rgb(218, 165, 32);
+
+  --neutral-gray: rgb(211, 211, 211);
+  --neutral-darkgray: rgb(51, 51, 51);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar Styling */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;   
+}
+#mainNav .container{
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+#mainNav .container span{
+  font-family: "Yuji Mai", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.navbar.scrolled {
+  background-color: #1e40af!important; /* Change to primary color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar.scrolled .nav-link:hover{
+  color: #fff;
+  border-radius: 10px;
+   background:#0000cc;
+}
+.navbar .nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd;
+}
+
+
+/* Welcome Section Styles */
+.welcome-section {
+    height: 100vh;
+    background: url('https://img.freepik.com/premium-photo/passionate-christian-praising-with-hands-raised-towards-cross-holy-spirit-filled-gracious-ch_567332-931.jpg?ga=GA1.1.839273.1731150990&semt=ais_hybrid') no-repeat center center/cover;
+    position: relative;
+}
+#home h1{
+   font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  color: var(--primary-gold);
+}
+#home a{
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+#home a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.welcome-section .container {
+    position: relative;
+    z-index: 2;
+}
+/*          <!-- conut Section --> */
+    
+.counter-container-1{
+  display: flex;
+   font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1rem;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #1e40af, #1e40af);
+  color: white;
+}
+    .counter-container-1 .count{
+font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+    
+  .countdown-container h1{
+     font-size: 23px;
+  } 
+
+.counter {
+  text-align: center;
+}
+
+.count {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Weekly Scripture Styles */
+#weekly-scripture h3, #weekly-meetings h3,.happy .row p{
+   color: var(--neutral-darkgray);
+  font-size: 3rem;
+   font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #555;
+    padding: 10px 20px;
+    border-left: 5px solid #007bff;
+    margin: 20px auto;
+    display: inline-block;
+}
+  .program-day {
+            background: linear-gradient(90deg, #1e40af, #1e40af);
+            color: white;
+            padding: 8px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .program-item {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .program-item i {
+            font-size: 1.5rem;
+            color: #1e40af;
+            margin-right: 15px;
+        }
+        .navigation span {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .navigation .active {
+            background-color: #1e40af;
+        }
+        .navigation .inactive {
+            background-color: #e0e0e0;
+        }
+/* Animation styles for fade-in and fade-out effects */
+.program-day {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.program-item {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.program-item i {
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: opacity 0.3s ease; /* Smooth transition for fade effect */
+}
+
+.navigation span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.navigation .active {
+  background-color: #007bff;
+}
+
+.navigation .inactive {
+  background-color: #ccc;
+}
+
+/* Fade-out and fade-in transition */
+#programContainer {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#programContainer.fade-out {
+  opacity: 0;
+}
+/* Fade effect for navigation */
+.navigation.fade-out span {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+/*     <!-- about city and jju --> */
+.about h2{
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+   color: var(--neutral-darkgray);
+}
+ .info-content {
+   display: none;
+}
+.timeline-container {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 2px solid #6c757d;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #6c757d;
+}
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-18px;
+  bottom: 0;
+  width: 2px;
+  background-color: #6c757d;
+}
+
+.accordion-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about .accordion-item::before {
+  content: '•';
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #6c757d;
+}
+.about .accordion-item::after {
+  content: '•';
+  position: absolute;
+  right: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #6c757d;
+}
+/* about city & jju read more button */
+.center-button {
+  text-align: center; 
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.progress {
+  margin-top: 10px;
+}
+
+
+/* about city & jju */
+    .team-section {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .team-section h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .team-section p {
+      color: #666;
+    }
+    .team-card img {
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border: 3px solid #ccc;
+      max-width: 100%;
+    }
+.team-info img{
+  margin: 0 10px 20px;
+}
+    .team-info h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .team-info p {
+      color: #555;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+button i{
+  padding-right:7px;
+}
+.social-icons-about {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Default gap between icons */
+  flex-wrap: wrap;
+}
+.social-icons-about a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+ /* Default color for social icons */
+  .social-icons-about a {
+    color: #6c757d; /* Bootstrap gray color */
+    font-size: 1.5rem; /* Adjust size as needed */
+    transition: color 0.3s ease;
+  }
+
+  /* Hover effect */
+  .social-icons-about a:hover i {
+    color: #007bff; /* Bootstrap primary color or any other color you prefer */
+    font-size:1.7rem;
+    transition: color 0.3s ease;
+  }
+
+  /* Custom colors for specific platforms */
+  .social-icons-about a:hover .bi-facebook {
+    color: #3b5998; /* Facebook blue */
+  }
+
+  .social-icons-about a:hover .bi-twitter {
+    color: #1da1f2; /* Twitter blue */
+  }
+
+  .social-icons-about a:hover .bi-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+  }
+
+  .social-icons-about a:hover .bi-instagram {
+    color: #c13584; /* Instagram gradient color approximation */
+  }
+
+  .social-icons-about a:hover .bi-youtube {
+    color: #ff0000; /* YouTube red */
+  }
+ .social-icons-about a:hover .bi-pinterest {
+    color: #E60023; 
+  }
+
+/* FAQ Styles */
+.faq .accordion-button {
+    font-weight: bold;
+}
+
+.faq .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.faq .accordion-item:last-child {
+    margin-bottom: 0;
+}   
+.faq-header, .testimonials-title{
+font-size: 2rem;
+font-weight: bold;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+ color: var(--neutral-darkgray);
+font-style: normal;
+}
+#jju h2 {
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.accordion-button {
+ background-color: #fff;
+color: #000;
+font-weight: bold;
+ }
+
+.accordion-button:not(.collapsed) {
+color: #000;
+background-color: #e9f5e9; /* Light green for active button */
+}
+
+.accordion-body {
+font-size: 1rem;
+}
+
+/* main */
+h1 {
+  font-family: 'Georgia', serif;
+}
+
+.card-img-top {
+  border-radius: 15px;
+}
+
+.card {
+  border: 2px solid #6c757d;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #3c3c3c;
+}
+
+.card-text {
+  color: #555;
+}
+/*  testimonial */
+.testimonials-section{
+  margin-top:5%;
+}
+.testimonial-icon {
+      font-size: 3rem;
+      color: #c0392b; /* Dark Blue */
+      margin-bottom: 15px;
+    }
+.card-text {
+  font-size: 1rem;
+  color: #6c757d; /* Muted text color */
+}
+.circle-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--primary-gold); /* Custom border color */
+  padding: 3px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  
+}
+
+.circle-image img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+
+
+/* Responsive adjustments for text and layout */
+@media (max-width: 1200px) { /* Large screens (e.g., tablets landscape) */
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 992px) { /* Medium screens (e.g., tablets portrait) */
+  .card-text {
+    font-size: 0.9rem;
+  }
+  .circle-image img {
+    width: 70px;
+    height: 70px;
+  }
+  .testimonial-icon {
+    font-size:1.9rem;
+    }
+}
+
+@media (max-width: 768px) { /* Small screens (e.g., phone landscape) */
+  .card-text {
+    font-size: 0.85rem;
+  }
+  .circle-image img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) { /* Extra small screens (e.g., phone portrait) */
+  .card-text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .circle-image img {
+    width: 50px;
+    height: 50px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+
+/*       count down */
+     .countdown-container {
+      margin-top: 50px;
+    }
+.time-box {
+background-color: #444;
+padding: 20px;
+border-radius: 10px;
+font-family: "Dancing Script", cursive;
+font-optical-sizing: auto;
+font-weight:400;
+font-style: normal;
+    }
+.label {
+margin-top: 10px;
+font-size: 1rem;
+}
+  /*<!--  move up button -->*/
+  .move-up-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+  }
+
+/*   <!-- Footer --> */
+
+    .footer{
+      background-color: #1e40af;
+      color: #fff;
+      padding: 20px 0;
+       margin-top: 15px;
+    }
+
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffc107;
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .social-icons a:hover {
+      color: #ffc107;
+       transition: color 0.3s ease;
+    }
+#made{
+  font-size:20px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+/* ???? */
+/* Phone (portrait) */
+  @media (max-width: 575.98px) {
+  #weekly-scripture h3, #weekly-meetings h3, .about container h2, #testimonial h2,.faq-header{
+  font-size: 23px; /* Default for larger screens */
+}
+    #home{
+       height:540px;
+    }
+   #weekly-scripture .blockquote  {
+    font-size: 14px;
+  }
+  #welcome-section {
+    padding: 3rem 1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.75rem;
+  }
+  #home  .lead{
+      font-size:1.2rem;
+    }
+  #welcome-section p {
+    font-size: 1rem;
+  }
+  .card-img-top {
+  max-height: 35vh; 
+  }
+  #welcome-section .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  #time .time-box{
+margin-bottom:20px;
+}   
+    #weekly-meetings .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width:104%;
+    }
+    #weekly-meetings .row .card{
+        flex-direction: row;
+       
+    }
+    #weekly-meetings .row .card-img-top{
+      width:65%;
+    }
+
+  blockquote {
+      padding: 4px 4px;
+  }
+.row.align-items-center {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align text for readability */
+  }
+
+  .col-4 {
+    width: 100%; /* Image takes full width on small screens */
+    margin-bottom: 15px; /* Add space below image */
+  }
+
+  .col-8 {
+    width: 100%; /* Details take full width */
+  }
+ #team-city, .team-info img{
+  width:50%;
+}
+  img.img-fluid {
+    max-width: 100%; /* Ensure image scales correctly */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .social-icons-about {
+    justify-content: center; /* Ensure icons are centered */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+
+    .cityShortInfo{
+      display:none;
+    }    
+    #center-button1{
+   opacity:0; 
+    }
+
+  .timeline-container{
+  padding-left:0;
+  margin-left: 0;
+    }
+ .timeline-container::after,  .about .accordion-item::after , .about .accordion-item::before{
+      opacity:0;
+    }
+  
+      .social-icons-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between grid items */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons-about a {
+    text-align: center; /* Center-align icons */
+  }
+
+  .social-icons-about i {
+    font-size: 1.5rem; /* Adjust icon size for better visibility */
+  }
+}
+
+/* Phone (landscape) */
+@media (min-width: 592px) and (max-width: 900px) {
+  #welcome-section {
+    padding: 3rem 2rem;
+  }
+  .card-img-top {
+  max-height: 45vh; 
+  }
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+  #home{
+       height:540px;
+    }
+  #welcome-section p {
+    font-size: 1.1rem;
+  }
+   .col-md-4 {
+    flex: 1 1 calc(50% - 1rem); /* Two cards per row */
+    max-width: calc(50% - 1rem);
+  }
+  
+   blockquote {
+      padding: 4px 4px;
+  }
+.accordion-body .container .row img {
+        width: 100%; /* Ensure the image scales properly */
+      
+    }
+
+ .accordion-body .container .row .col-lg-8{
+    flex: 0 0 80%;
+  margin-bottom:20px;
+}
+  .accordion-body p{
+     margin-top:20px;
+  }
+    .cityShortInfo{
+      display:none;
+    }    
+    #center-button1{
+   opacity:0; 
+    }
+
+  .timeline-container{
+  padding-left:0;
+  margin-left: 0;
+    }
+ .timeline-container::after, .about .accordion-item::after, .about .accordion-item::before{
+      opacity:0;
+    }
+    #readMoreCity1, #readMoreJju1{
+      display: none;
+      
+    }
+}
+
+/* Tablet (portrait) */
+@media (min-width: 901px) and (max-width: 1024px) {
+  #welcome-section {
+    padding: 4rem 3rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+#home{
+       height:540px;
+    }
+  #welcome-section p {
+    font-size: 1.2rem;
+  }
+
+  #welcome-section .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+   .col-md-4 {
+    flex: 1 1 calc(33.33% - 1rem); /* Three cards per row */
+    max-width: calc(33.33% - 1rem);
+  }
+    #happy {
+      display:none;
+    }
+  .counter-container-1{
+  display: flex;
+   font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1rem;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #1e40af, #1e40af);
+  color: white;
+}
+    .counter-container-1 .count{
+font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+    #readMoreCity1, #readMoreJju1{
+      display: none;
+      
+    }
+}
+
+/* Tablet (landscape) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #welcome-section {
+    padding: 5rem 4rem;
+  }
+#home{
+       height:540px;
+    }
+  
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+
+  #welcome-section p {
+    font-size: 1.25rem;
+  }
+
+  #welcome-section .btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+  }
+   .col-md-4 {
+    flex: 1 1 calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem);
+  }
+  #happy {
+      display:none;
+    }
+.counter-container-1{
+  display: flex;
+   font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1rem;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #1e40af, #1e40af);
+  color: white;
+}
+    .counter-container-1 .count{
+font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+    #readMoreCity1, #readMoreJju1{
+      display: none;
+      
+    }
+}
+/* Desktop */
+@media (min-width: 1281px) {
+  #welcome-section {
+    padding: 6rem 5rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 3.5rem;
+  }
+
+  #welcome-section p {
+    font-size: 1.5rem;
+  }
+  .col-md-4 {
+    flex: 1 1 calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem);
+  }
+  #readMoreCity1, #readMoreJju1{
+    display: none;
+    
+  }
+}

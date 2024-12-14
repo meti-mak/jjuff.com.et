@@ -1,0 +1,258 @@
+/* header */
+:root {
+  --primary-blue: rgb(0, 51, 102);
+  --primary-gold: rgb(255, 215, 0);
+  --primary-white: rgb(255, 255, 255);
+
+  --secondary-green: rgb(50, 205, 50);
+  --secondary-beige: rgb(245, 245, 220);
+  --secondary-skyblue: rgb(135, 206, 235);
+
+  --accent-red: rgb(220, 20, 60);
+  --accent-purple: rgb(128, 0, 128);
+  --accent-goldenrod: rgb(218, 165, 32);
+
+  --neutral-gray: rgb(211, 211, 211);
+  --neutral-darkgray: rgb(51, 51, 51);
+}
+
+/* Navbar Styling */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px; 
+  
+  
+}
+
+.navbar.scrolled {
+  background-color: #1e40af!important; /* Change to primary color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#mainNav .container{
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+#mainNav .container span{
+  font-family: "Yuji Mai", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.navbar .nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-link{
+  color: #fff;
+}
+
+.navbar.scrolled .nav-link:hover{
+  color: #fff;
+   background:#0000cc;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd;
+}
+
+
+/* Welcome Section Styles */
+.welcome-section {
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space_637285-544.jpg?ga=GA1.1.839273.1731150990&semt=ais_hybrid') no-repeat center center/cover;
+    position: relative;
+}
+#home h1{
+   font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  color: var(--primary-gold);
+}
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.welcome-section .container {
+    position: relative;
+    z-index: 2;
+}
+.section-heading, #section-heading {
+text-align: center;
+margin-top: 2rem;
+color: var(--neutral-darkgray);
+font-size: 2.5rem;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+    }
+#section-p{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--neutral-darkgray);
+  margin-bottom: 2rem;
+  
+}
+    .card i {
+      font-size: 2rem;
+      color: #c0392b;
+    }
+
+    .card-title {
+      color: #c0392b;
+      font-weight: bold;
+    }
+  
+
+    .event-card i {
+      font-size: 2.5rem;
+      color: #c0392b;
+    }
+
+    .event-date {
+      font-weight: bold;
+      color: #c0392b;
+    }
+
+    #section-p {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      background-color:#e0e0e0;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+/*<!--  move up button -->*/
+  .move-up-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+    z-index: 1000;
+  }
+/*   <!-- Footer --> */
+
+    .footer {
+      background-color:#1e40af;
+      color: #fff;
+      padding: 20px 0;
+       margin-top: 15px;
+    }
+
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffc107;
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+#made{
+  font-size:20px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* ???? */
+/* Phone (portrait) */
+  @media (max-width: 575.98px) {
+ #weekly-scripture h3, #weekly-meetings h3, .about container h2, #testimonial h2,.faq-header{
+  font-size: 23px; /* Default for larger screens */
+}
+    #home{
+       height:620px;
+    }
+   #weekly-scripture .blockquote  {
+    font-size: 14px;
+  }
+  #welcome-section {
+    padding: 3rem 1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.75rem;
+  }
+  #home  .lead{
+      font-size:1.2rem;
+    }
+  #welcome-section p {
+    font-size: 1rem;
+  }
+  #section-heading{
+    font-size:24px;
+    font-weight: bold;
+  }
+    .section-heading, .col .card-body h5{
+    font-size:27px;
+     font-weight: bold;
+      font-family: 'Roboto Slab', serif;
+    }
+ 
+    #evants h5{
+      font-size:18px;  
+    }
+    #evants .event-date{
+      font-size:14px;
+    }
+}
+
+@media (min-width: 592px) and (max-width: 900px) {
+ 
+}
+
+/* Tablet (portrait) */
+@media (min-width: 901px) and (max-width: 1024px) {
+  
+}
+
+/* Tablet (landscape) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}

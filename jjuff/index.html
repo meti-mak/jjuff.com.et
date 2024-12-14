@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JU Fellowship - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!--google font    -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yuji+Mai&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <!-- Header Section -->
+ <header>
+  <nav class="navbar navbar-expand-lg fixed-top bg-light shadow" id="mainNav">
+    <div class="container">
+      <!-- Logo with Image -->
+  <a class="navbar-brand fw-bold text-warning fs-2 d-flex align-items-center" href="#">
+    <img src="/assets/img/jjuffff.jpg" alt="" class="me-2" style="width: 50px; height: 50px;  border-radius: 50%;">
+    JJU<span class="text-dark">FF</span>
+  </a>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+     <!-- Navigation Menu -->
+     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">
+            <i class="bi bi-house-door-fill"></i> Home
+          </a>
+        </li>
+     
+     <li class="nav-item">
+<a class="nav-link" href="/jjuff/leadership.html">
+  <i class="bi bi-people-fill"></i> Leadership
+</a>
+</li>
+           <li class="nav-item">
+          <a class="nav-link" href="/jjuff/contac.html">
+            <i class="bi bi-envelope-fill"></i> Contact Us
+          </a>
+        </li>
+        
+           <li class="nav-item">
+          <a class="nav-link" href="/jjuff/about.html">
+            <i class="bi bi-info-circle-fill"></i> About
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+</header>
+  
+  
+    <!-- Homepage Section -->
+    <section id="home" class="welcome-section text-white d-flex align-items-center">
+        <div class="container text-center">
+            <!-- Welcome Text -->
+            <h1 class="display-4">Welcome to JJU Famliy Fellowship</h1>
+            <p class="lead">
+                Connecting and inspiring students on their spiritual journey. Join us to grow in faith, fellowship, and service.
+            </p><br>
+            <a href="#get-involved" class="btn btn-primary me-1">Get Involved</a>
+        
+    </section>
+      
+         <!-- conut Section -->
+      <div class="counter-container-1">
+  <div class="counter">
+    <h1 class="count" data-target="5">0</h1>
+    <p>Services</p>
+  </div>
+  <div class="counter">
+    <h1 class="count" data-target="9">0</h1>
+    <p>Teams</p>
+  </div>
+  <div class="counter">
+    <h1 class="count" data-target="600">0</h1>
+    <p>Members</p>
+  </div>
+</div>
+
+    <!-- Weekly Scripture Section -->
+    <section id="weekly-scripture" class="py-5">
+        <div class="container text-center">
+            <h3>Weekly Scripture</h3>
+            <blockquote class="blockquote mx-auto">
+                "For where two or three gather in my name, there am I with them." - Matthew 18:20
+            </blockquote>
+        </div>
+    </section>
+      
+<!--          regular-programs -->
+     <div   class="container py-4">
+        <h2 class="text-center">Regular Programs</h2>
+        <p class="text-center text-muted">You are invited to be part of these programs</p>
+        <div id="programContainer">
+            <!-- Program content dynamically populated by JavaScript -->
+        </div>
+
+        <!-- Navigation -->
+        <div  class="d-flex justify-content-between align-items-center text-center mt-4">
+            <button id="prevDay" class="btn btn-outline-primary ">&larr;</button>
+            <div  class="navigation ">
+                <span class="active "></span>
+                <span class="inactive"></span>
+                <span class="inactive"></span>
+            </div>
+            <button id="nextDay" class="btn btn-outline-primary">&rarr;</button>
+        </div>
+    </div>
+      
+   <!-- Weekly Meetings Info -->
+    <section id="weekly-meetings" class="py-5">
+        <div class="container text-center">
+            <h3>Join Our Weekly Meetings</h3>
+            <p>Every Friday at 6 PM in the university auditorium.</p>
+        </div>
+   
+     
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="https://media.istockphoto.com/id/927678766/photo/worship-hands-raised.jpg?s=612x612&w=0&k=20&c=4ftd56frkzd0A4rhA8epTT2IZGdc6lNEAQdGGDQJlRY=" alt="Prayer" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Prayer & Worship</h5>
+            <p class="card-text">Join us in lifting our voices in prayer and worship, growing in spirit and unity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="https://media.istockphoto.com/id/463216215/photo/bible-study.jpg?s=612x612&w=0&k=20&c=9_q2G6PteXkW6BWUZnRpaTIZIpYsyaDB5Xuht8Kneug=" alt="Bible Study" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Bible Study</h5>
+            <p class="card-text">Dive into the Word of God, deepening your understanding and faith in Christ.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="https://img.freepik.com/premium-photo/side-view-friends-using-mobile-phone_1048944-22485691.jpg?ga=GA1.1.839273.1731150990&semt=ais_hybrid" alt="Community Service" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Community Outreach</h5>
+            <p class="card-text">Serve and support our local community, living out the love of Christ through action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>  
+          <!-- About city and jju -->
+   <div class="about container py-5">
+    <h2 class="faq-header mb-4 text-center">About City & JJU</h2>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      <div class="accordion" id="curriculumAccordion">
+        <!-- Section 1 - Jigjiga City -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              <i class="bi bi-buildings"></i> Jigjiga  City
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#curriculumAccordion">
+            <div class="accordion-body">
+              <div class="container my-5">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-4 col-md-6 text-center">
+                    <img id="team-city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDV9hnwS40rwwK-Q4rDo2GahJirEVRuxX9eA&s" alt="Jigjiga City" class="img-fluid">
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                    <div class="team-info">
+                      <h3>Jigjiga</h3>
+                      <p class="text-muted">A City in Ethiopia</p>
+                      <p id="cityShortInfo">
+       <p>
+          Jigjiga, located in the Somali Regional State of Ethiopia, is a city with a rich history tied to Somali culture and traditions. Historically, it served as a vital hub for trade and communication in the Horn of Africa due to its strategic location near the border with Somalia.
+        </p>
+        <p class="cityShortInfo">
+          In more recent history, Jigjiga has grown significantly due to its status as the capital of the Somali Region, playing a pivotal role in Ethiopia's federal system.
+        </p>
+                      </p>
+                      <div id="cityFullInfo" class="info-content">
+                       <div class="timeline-container">
+    <div class="timeline-line"></div>
+    <div class="accordion" id="jjuAccordion">
+      <!-- Section 2 Climate and Temperature -  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPrograms">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrograms" aria-expanded="true" aria-controls="collapsePrograms">
+             <h5 class="section-title">
+                Climate and Temperature
+          <span class="material-icons icon-large">wb_sunny</span>
+        </h5>
+          </button>
+        </h2>
+        <div id="collapsePrograms" class="accordion-collapse collapse" aria-labelledby="headingPrograms" data-bs-parent="#jjuAccordion">
+          <div class="accordion-body">
+            <ul>
+            <p>
+          Jigjiga experiences a semi-arid climate, characterized by hot days and cooler nights. The average annual temperature is around 22–26°C (72–79°F), with little variation throughout the year.
+        </p>
+          <li><b>Gu (March to May):</b> The main rainy period.</li>
+          <li><b>Deyr (October to December):</b> A secondary rainy season.</li>
+        </ul>
+        <p>
+          Rainfall is generally moderate, with an annual average of 500-600 mm, making Jigjiga suitable for pastoralism and limited agriculture.
+        </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3 - Religious -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingResearch">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResearch" aria-expanded="true" aria-controls="collapseResearch">
+           <h5 class="section-title"> Religious Demographics
+          <span class="material-icons icon-large">people</span> 
+        </h5>
+          </button>
+        </h2>
+        <div id="collapseResearch" class="accordion-collapse collapse" aria-labelledby="headingResearch" data-bs-parent="#jjuAccordion">
+          <div class="accordion-body">
+            <p>
+          The city is predominantly inhabited by Somali people, with religion playing a significant role in daily life. The religious composition is as follows:
+        </p>
+        <ul>
+          <li><b>Muslims:</b> Approximately 96–98% of the population practice Islam, mainly Sunni, reflecting the Somali cultural heritage.</li>
+          <li><b>Christians:</b> About 2–4% of the population are Christians, primarily Ethiopian Orthodox Christians and some Protestants.</li>
+        </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4 - ecomomy -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCampus">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCampus" aria-expanded="false" aria-controls="collapseCampus">
+              <h5 class="section-title">  Economy and Lifestyle
+          <span class="material-icons icon-large">show_chart</span>
+        </h5>
+          </button>
+        </h2>
+        <div id="collapseCampus" class="accordion-collapse collapse" aria-labelledby="headingCampus" data-bs-parent="#jjuAccordion">
+          <div class="accordion-body">
+            <p>
+          Jigjiga's economy is driven by trade, livestock farming, and growing urbanization. The city serves as a marketplace for livestock, especially camels, goats, and sheep, which are essential to the Somali Region's livelihood.
+        </p>
+        <p>
+          Tourists visiting Jigjiga can experience Somali culture through its traditional music, cuisine, and markets like the bustling Jigjiga market, where you can find vibrant Somali crafts and textiles.
+        </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <div class="social-icons-about d-flex justify-content-center gap-3">
+  <a href="#"aria-label="Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="#" aria-label="Twitter">
+    <i class="bi bi-twitter"></i>
+  </a>
+  <a href="#"  aria-label="LinkedIn">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="#"  aria-label="Instagram">
+    <i class="bi bi-instagram"></i>
+  </a>
+  <a href="#" aria-label="YouTube">
+    <i class="bi bi-youtube"></i>
+  </a>
+  <a href="#" aria-label="Pinterest">
+    <i class="bi bi-pinterest"></i>
+  </a>
+</div>
+              </div>
+             <div  id="center-button1" class="center-button d-flex justify-content-center">
+                        <button id="readMoreCity" type="button" class="btn btn-primary">Read More</button>
+                      </div>
+            <div id="center-button" class="center-button d-flex justify-content-center">
+                        <button  id="readMoreCity1" type="button" class="btn btn-primary">Read More</button>
+                      </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2 - Jigjiga University -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+              <i class="bi bi-mortarboard"></i> Jigjiga University
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#curriculumAccordion">
+            <div class="accordion-body">
+              <div class="container my-5">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-8 col-md-6">
+                    <div class="team-info">
+                      <h3>Jigjiga University</h3>
+                      <p> 
+                      Jigjiga University (JJU) is a public higher education institution located in the heart of Jigjiga City. Established in 2007, it is one of Ethiopia's rapidly growing universities, serving as an educational and research hub in the Somali Regional State. The university was founded to provide accessible higher education to the region's diverse communities and to support the socio-economic development of the area.
+                      </p>
+                      <div id="jjuFullInfo" class="info-content">
+                        <div class="timeline-container">
+    <div class="timeline-line"></div>
+    <div class="accordion" id="jjuAccordion">
+
+      <!-- Section 2 - Academic Programs -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPrograms">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrograms" aria-expanded="true" aria-controls="collapsePrograms">
+            <i class="bi bi-book"></i> Academic Programs
+          </button>
+        </h2>
+        <div id="collapsePrograms" class="accordion-collapse collapse" aria-labelledby="headingPrograms" data-bs-parent="#jjuAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li><b>Health Sciences:</b> Medicine, Public Health, Nursing, and Pharmacy.</li>
+              <li><b>Engineering and Technology:</b> Civil Engineering, Electrical Engineering, and IT.</li>
+              <li><b>Agriculture:</b> Crop Science, Animal Science, and Natural Resource Management.</li>
+              <li><b>Social Sciences:</b> Law, Economics, Sociology, and Linguistics.</li>
+              <li><b>Business:</b> Accounting, Management, and Marketing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3 - Research -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingResearch">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResearch" aria-expanded="true" aria-controls="collapseResearch">
+            <i class="bi bi-flask"></i> Research and Community Engagement
+          </button>
+        </h2>
+        <div id="collapseResearch" class="accordion-collapse collapse" aria-labelledby="headingResearch" data-bs-parent="#jjuAccordion">
+          <div class="accordion-body">
+            <p>
+              JJU is known for its research on pastoralism, climate resilience, and peace-building, and its engagement in community outreach programs addressing local challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4 - Campus and Facilities -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCampus">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCampus" aria-expanded="true" aria-controls="collapseCampus">
+            <i class="bi bi-building"></i> Campus and Facilities
+          </button>
+        </h2>
+        <div id="collapseCampus" class="accordion-collapse collapse" aria-labelledby="headingCampus" data-bs-parent="#jjuAccordion">
+          <div class="accordion-body">
+            <p>
+              JJU's campus includes libraries, laboratories, hostels, and recreational facilities designed to support education and student well-being.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+               
+                  <div class="col-lg-4 col-md-6 text-center" style="margin-bottom:30px;">
+                    <img  id="team-city" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLEFovAtdC3itGShXXblicOj_LqDzivLpDfv7-1m453CvYUaappA_0MkakAnS-mswEMW0&usqp=CAU" alt="Jigjiga University" class="img-fluid">
+                  </div>
+                </div>
+                   <!-- Social Media Icons -->
+<div class="social-icons-about d-flex justify-content-center gap-3">
+  <a href="#"aria-label="Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="#" aria-label="Twitter">
+    <i class="bi bi-twitter"></i>
+  </a>
+  <a href="#"  aria-label="LinkedIn">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="#"  aria-label="Instagram">
+    <i class="bi bi-instagram"></i>
+  </a>
+  <a href="#" aria-label="YouTube">
+    <i class="bi bi-youtube"></i>
+  </a>
+  <a href="#" aria-label="Pinterest">
+    <i class="bi bi-pinterest"></i>
+  </a>
+</div>
+              </div>
+              
+                        <div class="center-button d-flex justify-content-center">
+                        <button id="readMoreJju" type="button" class="btn btn-primary">Read More</button>
+                      </div></div>
+            
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+  
+    <div id="jju" class= "container ">
+        <h1 class="faq-header">Fellowship FAQs</h1>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        What is JJU Christian Fellowship?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        JJU Christian Fellowship is a community of believers committed to growing in faith, fellowship,
+                        and service to God and others.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I join the fellowship?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can join by attending one of our weekly meetings or reaching out to our leadership team.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        When are the weekly meetings?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Weekly meetings are held every Wednesday at 7 PM in the university chapel.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What activities do you offer?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We offer Bible studies, prayer sessions, outreach programs, and social events.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      
+  <div class="testimonials-section">
+    <div id="testimonial" class="container">
+      <h2 class="testimonials-title text-center">Testimonials</h2>
+      <p id="section-p" class="text-center text-dark">Discover the stories of faith and transformation from members of our community.</p>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+      <!-- Testimonial 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow border-0 text-center">
+          <div class="card-body p-4">  <i class="fa fa-quote-left testimonial-icon"></i>
+            <span class="d-block mb-3 text-warning fs-4">★★★★★</span>
+            <p class="card-text">
+              “Being part of Jju family fellowship has truly enriched my university experience. 
+              The supportive environment and inspiring events have helped me grow both spiritually and personally.”
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <div class="circle-image mx-auto mb-3">
+              <img src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=NtM9Wbs1DBiGaiowsxJY6wNCnLf0POa65rYEwnZymrM=" alt="Rachel Carter" class="rounded-circle">
+            </div>
+            <h5 class="fw-bold">Rachel Carter</h5>
+            <small class="text-muted">Psychology Student</small>
+          </div>
+        </div>
+      </div>
+
+       <!-- Testimonial 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow border-0 text-center">
+          <div class="card-body p-4">
+            <i class="fa fa-quote-left testimonial-icon"></i>
+            <span class="d-block mb-3 text-warning fs-4">★★★★★</span>
+            <p class="card-text">
+              “Jju family fellowship has provided me with a community where I feel accepted and valued. 
+              The fellowship's activities have helped me develop essential leadership skills and deepened my faith.”
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <div class="circle-image mx-auto mb-3">
+              <img src="/assets/img/meti_x.jpg" alt="Samuel Johnson" class="rounded-circle">
+            </div>
+            <h5 class="fw-bold">Samuel Johnson</h5>
+            <small class="text-muted">Engineering Student</small>
+          </div>
+        </div>
+      </div>
+
+        <!-- Testimonial 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow border-0 text-center">
+          <div class="card-body p-4">
+            <i class="fa fa-quote-left testimonial-icon"></i>
+            <span class="d-block mb-3 text-warning fs-4">★★★★★</span>
+            <p class="card-text">
+              “I am grateful for the friendships and support I have found at Jju family fellowship. 
+              The events and discussions have been both thought-provoking and enjoyable, 
+              creating a space for meaningful connections.”
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <div class="circle-image mx-auto mb-3">
+              <img src="https://img.freepik.com/free-photo/young-male-priest-with-bible-church_23-2149298383.jpg?ga=GA1.1.839273.1731150990&semt=ais_hybrid" class="rounded-circle">
+            </div>
+            <h5 class="fw-bold">Sarah Thompson</h5>
+            <small class="text-muted">Biology Student</small>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+      
+  
+  
+       <div class="container countdown-container">
+    <h1 class="mb-4 text-center ">Countdown to Friday 18:30 am</h1>
+    <div id="time" class="row text-center text-warning fw-bold"">
+      <div class="col-6 col-sm-3">
+        <div class="time-box">
+          <div id="days" class="display-4">0</div>
+                                              <i class="bi bi-calendar-event fs-2 text-primary"></i>
+          <div class="label">Days</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="time-box ">
+          <div id="hours" class="display-4">0</div>
+           <i class="bi bi-clock-fill fs-2 text-success"></i>
+          <div class="label">Hours</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="time-box">
+          <div id="minutes" class="display-4">0</div>
+              <i class="bi bi-stopwatch-fill fs-2 text-warning"></i>
+          <div class="label">Minutes</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3">
+        <div class="time-box">                     
+          <div id="seconds" class="display-4">
+                     0</div>
+                                              <i class="bi bi-hourglass-split fs-2 text-danger"></i>
+          <div class="label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+     <button id="moveUp" class="btn btn-primary move-up-btn">
+    <span class="material-icons">arrow_upward</span>
+  </button>
+                            
+ <footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Company Overview -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fst-italic">Company Overview</h5><br>
+        <p>
+          With a commitment to excellence and customer satisfaction, we strive to deliver premium quality and innovative solutions tailored to meet your needs.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5 class=" fst-italic">Contact</h5>
+        <p><i class="bi bi-geo-alt"></i> Jju Family Fellowship, Ethiopia</p>
+                                   <p> <a href="tel:+251972727963" <i class="bi bi-telephone"></i> +251972727963</a> </p>
+        <p><a href="mailto:support@yourdomain.com"><i class="bi bi-envelope"></i>  www.jjuff@gmail.com</a></p>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-4 mb-4">
+        <h5  class="fst-italic">Services</h5>
+        <ul class="list-unstyled">
+          <a href="#"> <li><i class="bi bi-book"></i> Bible Study Groups | </li></a> <br>
+           <a href="#">  <li><i class="bi bi-people"></i> Mentorship Programs | </li></a><br>
+           <a href="#">  <li><i class="bi bi-hand-thumbs-up"></i> Community Service Projects | </li> </a>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- Bottom Row -->
+    <div id="made" class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0">Copyright 2024 All Rights Reserved. Made by <a href="#">meti-aga</a></p>
+      </div>
+      <div class="col-md-6 text-center text-md-end social-icons">
+        <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+<script src="main.js"></script>
+ 
+<!-- Add Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">                                      
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>                   
+</body>
+
+</html>

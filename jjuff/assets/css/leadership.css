@@ -1,0 +1,400 @@
+:root {
+  --primary-blue: rgb(0, 51, 102);
+  --primary-gold: rgb(255, 215, 0);
+  --primary-white: rgb(255, 255, 255);
+
+  --secondary-green: rgb(50, 205, 50);
+  --secondary-beige: rgb(245, 245, 220);
+  --secondary-skyblue: rgb(135, 206, 235);
+
+  --accent-red: rgb(220, 20, 60);
+  --accent-purple: rgb(128, 0, 128);
+  --accent-goldenrod: rgb(218, 165, 32);
+
+  --neutral-gray: rgb(211, 211, 211);
+  --neutral-darkgray: rgb(51, 51, 51);
+}
+         /* Custom CSS for the website */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+         
+        }
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;   
+}
+#mainNav .container{
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+#mainNav .container span{
+  font-family: "Yuji Mai", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+/* Welcome Section Styles */
+.welcome-section {
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/students-rehashing-theater-class_23-2150960332.jpg?ga=GA1.1.839273.1731150990&semt=ais_hybrid') no-repeat center center/cover;
+    position: relative;
+}
+
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+#home h1{
+   font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  color: var(--primary-gold);
+}
+.welcome-section .container {
+    position: relative;
+    z-index: 2;
+}
+.navbar.scrolled {
+  background-color: #1e40af!important; /* Change to primary color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar.scrolled .nav-link:hover{
+  color: #fff;
+   background:#0000cc;
+}
+.navbar .nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd;
+}
+.lead{
+  font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+}
+        .leadership-card img {
+            max-height: 150px;
+            object-fit: cover;
+        }
+     /* leaders  section */
+#leadership h2,#gallery h2, #animated-gallery h2, #call-us{
+color: var(--neutral-darkgray);
+font-size: 3rem;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+margin-bottom: 8rem;
+}
+/* General styles for the gallery section */
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* General Styles */
+
+/* Top and Bottom Galleries */
+.scroll-left,
+.scroll-right {
+    overflow: hidden;
+    white-space: nowrap;
+    transition: transform 1s ease-in-out;
+}
+
+.scroll-left img,
+.scroll-right img {
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.scroll-left img:hover,
+.scroll-right img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation Setup */
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.animate-left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.animate-right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* General Styling */
+#animated-gallery {
+    overflow: hidden;
+}
+
+.hidden-scroll {
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.hidden-scroll img {
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hidden-scroll img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Classes */
+.animate-left {
+    transform: translateX(-100%);
+    opacity: 1;
+}
+
+.animate-right {
+    transform: translateX(100%);
+    opacity: 1;
+}
+    /* Initial hidden state for animation */
+    .animate-right {
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 0.7s ease-in-out;
+    }
+
+    .animate-left {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: all 0.7s ease-in-out;
+    }
+    /* Visible state after animation */
+    .visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .content {
+      margin: 50px 0;
+    }
+#contact .container{
+      box-shadow:  4px 4px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+}
+#contact .container h2{
+color: var(--neutral-darkgray);
+font-size: 3rem;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+}
+#call-dic a{
+   text-decoration: none;
+}
+ /*<!--  move up button -->*/
+ .move-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
+  z-index: 1000;
+}
+/*   <!-- Footer --> */
+
+    .footer {
+      background-color:#1e40af;
+      color: #fff;
+      padding: 20px 0;
+       margin-top: 15px;
+    }
+
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffc107;
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+#made{
+  font-size:20px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Phone (portrait) */
+@media (max-width: 575.98px) {
+  #weekly-scripture h3, #weekly-meetings h3, .about container h2, #testimonial h2,.faq-header{
+  font-size: 23px; /* Default for larger screens */
+}
+    #home{
+       height:570px;
+    }
+   #weekly-scripture .blockquote  {
+    font-size: 14px;
+  }
+  #welcome-section {
+    padding: 3rem 1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.75rem;
+  }
+  #home  .lead{
+      font-size:1.2rem;
+    }
+  #welcome-section p {
+    font-size: 1rem;
+  }
+  .card-img-top {
+  max-height: 35vh; 
+  }
+  #leadership .col-md-4{
+    padding-top: 100px;
+  }
+  #leadership h2, #gallery h2, #animated-gallery h2,  #call-us{
+    font-size:26px;
+    font-weight: bold;
+  }
+ #leadership h5{
+  
+    font-size:20px;
+    font-weight: bold;
+  }
+  #leadership .card img{
+    width: 60%;
+    margin-top:-50px;
+    margin-left: 65px;
+    
+  }
+  #animated-gallery img {
+    max-width:100%;
+    height:200px;
+    display: block;
+    object-fit: cover;
+}
+  .gallery-top,
+  .gallery-bottom {
+      margin-bottom: 1.5rem;
+  }
+}
+
+/* Phone (landscape) */
+@media (min-width: 592px) and (max-width: 900px) { 
+
+}
+
+/* Tablet (portrait) */
+@media (min-width: 901px) and (max-width: 1024px) {
+ 
+}
+
+/* Tablet (landscape) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+}
+/* Desktop */
+@media (min-width: 1281px) {
+  
+}

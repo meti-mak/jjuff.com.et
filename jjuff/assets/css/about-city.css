@@ -1,0 +1,143 @@
+
+
+.header {
+  background-color: #2196f3;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  background-image: url('https://via.placeholder.com/1500x500'); /* Replace with a real image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.section-title {
+  color: #2196f3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-large {
+  font-size: 36px;
+  color: #2196f3;
+}
+
+.content-wrapper {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.text-content {
+  padding-left: 20px;
+}
+/*<!--  move up button -->*/
+.move-up-btn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+display: none; /* Initially hidden */
+z-index: 1000;
+}
+
+/* Navbar Styling */
+.navbar {
+transition: background-color 0.3s ease, box-shadow 0.3s ease;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px; 
+
+
+}
+
+.navbar.scrolled {
+background-color: #1e40af!important; /* Change to primary color */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#mainNav .container{
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight:600;
+font-style: normal;
+}
+#mainNav .container span{
+font-family: "Yuji Mai", serif;
+font-weight: 800;
+font-style: normal;
+}
+.navbar .nav-link {
+color: #000;
+transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-link{
+color: #fff;
+}
+
+.navbar.scrolled .nav-link:hover{
+color: #fff;
+background:#0000cc;
+}
+
+.navbar-nav .nav-link {
+margin-right: 15px;
+font-weight: 500;
+color: #000;
+transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+color: #0d6efd;
+}
+/*   <!-- Footer --> */
+
+.footer {
+background-color:#1e40af;
+color: #fff;
+padding: 20px 0;
+margin-top: 15px;
+}
+
+.footer a {
+color: #f8f9fa;
+text-decoration: none;
+}
+
+.footer a:hover {
+color: #ffc107;
+text-decoration: underline;
+}
+
+.social-icons a {
+margin: 0 10px;
+font-size: 1.2rem;
+color: #fff;
+}
+
+.social-icons a:hover {
+color: #ffc107;
+}
+#made{
+font-size:20px;
+font-family: "Dancing Script", cursive;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+}

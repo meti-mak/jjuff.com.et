@@ -1,0 +1,248 @@
+:root {
+  --primary-blue: rgb(0, 51, 102);
+  --primary-gold: rgb(255, 215, 0);
+  --primary-white: rgb(255, 255, 255);
+
+  --secondary-green: rgb(50, 205, 50);
+  --secondary-beige: rgb(245, 245, 220);
+  --secondary-skyblue: rgb(135, 206, 235);
+
+  --accent-red: rgb(220, 20, 60);
+  --accent-purple: rgb(128, 0, 128);
+  --accent-goldenrod: rgb(218, 165, 32);
+
+  --neutral-gray: rgb(211, 211, 211);
+  --neutral-darkgray: rgb(51, 51, 51);
+}
+body {
+            font-family: Arial, sans-serif;
+        }
+/* header */
+
+
+/* Navbar Styling */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px; 
+  
+  
+}
+
+.navbar.scrolled {
+  background-color: #1e40af!important; /* Change to primary color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd;
+}
+.lead{
+  font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+}
+
+#mainNav .container{
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+#mainNav .container span{
+  font-family: "Yuji Mai", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+/* Welcome Section Styles */
+.welcome-section {
+    height: 100vh;
+    background: url('https://img.freepik.com/premium-photo/nice-photo-with-beach_1349239-20.jpg?ga=GA1.1.839273.1731150990&semt=ais_hybridh') no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+#home h1{
+   font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  color: var(--primary-gold);
+}
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.welcome-section .container {
+    position: relative;
+    z-index: 2;
+}
+/* Add custom styling to the icons */
+.social-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Enlarge the icon on hover */
+  opacity: 0.8;         /* Add a slight fade effect */
+}
+.content-divider{
+  height: 0.65rem;
+  background: linear-gradient(to left, #448aff,yellow, #448aff); margin-top: 10px;
+}
+.content-divider-1{
+  height: 0.65rem;
+  background: linear-gradient(to left, #448aff,yellow, #448aff);
+  margin-top:-6px;
+}
+
+#animated-text{
+    color: var(--neutral-darkgray);
+  font-size: 3rem;
+   font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+   margin:0.9rem;
+}
+         /* Fullscreen Map Container */
+        #map {
+            height: 100vh;  /* 100% of the viewport height */
+            width: 100%;    /* 100% of the viewport width */
+        }
+
+.row-info{
+  max-width: 100%;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+/* Centering and animation styling */
+#animated-text {
+    font-family: "Yuji Mai", serif;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black; /* Cursor effect */
+  animation: blink 0.9s steps(2, start) infinite;
+  font-size: 2rem; /* Adjust size as needed */
+  text-align: center;
+  margin-bottom: 3px; /* Ensure it's horizontally centered */
+}
+ /*<!--  move up button -->*/
+ .move-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
+  z-index: 1000;
+}
+
+/*   <!-- Footer --> */
+
+    .footer {
+      background-color:#1e40af;
+      color: #fff;
+      padding: 20px 0;
+       margin-top: 15px;
+    }
+
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffc107;
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+#made{
+  font-size:20px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+/* Phone (portrait) */
+@media (max-width: 575.98px) {
+  
+  #home {
+     font-size: 1.75rem;
+  }
+
+
+  #home  .lead{
+      font-size:1rem;
+    }
+
+  .card-img-top {
+  max-height: 35vh; 
+  }
+ 
+}
+
+/* Phone (landscape) */
+@media (min-width: 592px) and (max-width: 900px) { 
+
+}
+
+/* Tablet (portrait) */
+@media (min-width: 901px) and (max-width: 1024px) {
+ 
+}
+
+/* Tablet (landscape) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+}
+/* Desktop */
+@media (min-width: 1281px) {
+  
+}
